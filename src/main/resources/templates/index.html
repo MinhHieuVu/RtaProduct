@@ -3,11 +3,12 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
     <title>Product Manager</title>
 </head>
 <body>
 <div align="center">
-    <h1>Danh Sách Sản Phẩm</h1>
+    <h1 id="list">Danh Sách Sản Phẩm</h1>
     <a href="/new">Tạo Sản Phẩm Mới</a>
     <br/><br/>
     <table border="1" cellpadding="10">
@@ -36,6 +37,7 @@
         </tr>
         </tbody>
     </table>
+    <img th:src="@{/img/anh-cr7.jpg}" alt="Name" class="menbers-img"/>
 </div>
 </body>
 </html>
